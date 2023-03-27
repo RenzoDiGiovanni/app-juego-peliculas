@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#imgCorrecta {
+    max-height: 55vh;
+    filter: blur(10px);
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+#btnJugar {
+    background: whitesmoke !important;
+    color: black;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+#btnInstrucciones {
+    margin-top: 6vh !important;
+    background: whitesmoke !important;
+    color: black;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+#inicio {
+    background-color: black !important;
+}
+.contenedorPadre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedorHijo {
+    width: 100%;
+}
+#logo {
+    display: block;
+    margin: 0 auto;
+    height: 22vh;
+    margin-bottom: 15vh;
+}
+.page, .page__background, .page__content {
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#btnOpcion1, #btnOpcion3 {
+    width: 84%;
+    margin: 0 auto;
+    display: block;
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: -1vh;
+    margin-top: 1vh;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+#btnOpcion2, #btnOpcion4 {
+    width: 84%;
+    margin: 0 auto;
+    display: block;
+    background-color: #e6e6e6;
+    color: black;
+    margin-bottom: -1vh;
+    margin-top: 1vh;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+#ojo {
+    height: 2.5vh;
+    position: absolute;
+    top: 6vh;
+    right: 2vh;
+}
+#mensaje, #mensaje2 {
+    width: 100%;
+}
+#mensaje h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+#mensaje2 h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+#btnSiguiente {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    background-color: #1e6744;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+#nombreJugador {
+    width: 75%;
+    height: 5vh;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    font-size: 22px;
+    color: white;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1pt;
+}
+#listaRanking div {
+    color: white;
+    text-align: center;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1pt;
+    font-size: 22px;
+    margin-top: 2vh;
+}
+#nombreLista {
+    color: #f14a4a;
+    font-weight: 300;
+}
+#btnVolver {
+    position: absolute;
+    color: white;
+    top: 4vh;
+    height: 3%;
+    padding-left: 3vh;
+}
+#mensajeRanking h1 {
+    color: white;
+    text-align: center;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1pt;
+    font-size: 36px;
+    margin-top: 3vh;
+}
+#textoInstrucciones p:first-child {
+    color: white;
+    text-align: center;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1pt;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    margin-top: 20vh;
+}
+#textoInstrucciones p {
+    color: white;
+    text-align: center;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1pt;
+    font-size: 22px;
+    margin-top: 5vh;
+}
+.progress-bar--indeterminate:before {
+    background-color: #cc3300 !important;
+}

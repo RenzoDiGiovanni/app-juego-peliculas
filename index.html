@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App Películas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/onsenui.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/onsen-css-components.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <ons-splitter>
+        <ons-splitter-content id="content" page="home"></ons-splitter-content>
+    </ons-splitter>
+
+    <template id="home">
+        <ons-page id="inicio">
+            <div class="contenedorPadre">
+                <div class="contenedorHijo">
+                    <img id="logo" src="img/logo.png" alt="logo"/>
+                    <input class="text-input text-input--material" placeholder="Usuario" id="nombreJugador" type="text" required>
+                    <input type="button" id="btnJugar" class="button--large--cta" style="width: 75%; height: 9vh; margin: 0 auto;" value="JUGAR">
+                    <input type="button" id="btnInstrucciones" class="button--large--cta" style="width: 75%; height: 9vh; margin: 0 auto;" value="INSTRUCCIONES">
+                </div>
+            </div>
+        </ons-page>
+    </template>
+    
+    <template id="pantallaInstrucciones">
+        <ons-page id="instrucciones">
+            <img id="btnVolver" src="img/volver.png" alt="volver"/>
+            <div id="textoInstrucciones">
+                <p>Trivia Film es un juego creado para aquellos amantes del cine. Dicho juego consiste en adivinar de qué película se trata el poster que aparece en pantalla en 10 ocasiones. ¡Cuidado! Tendrás cuatro opciones de respuesta pero el poster se visualizará de manera borrosa. 
+                </p>
+                <p>Película acertada: +2 puntos</p>
+                <p>Película fallada: -1 punto</p>
+                <p>Uso del comodín: -1 punto</p>
+            </div>
+        </ons-page>
+    </template>
+
+    <template id="pantallaJuego">
+        <ons-page id="juego">
+            <div id="jugar">
+
+            </div>
+        </ons-page>
+    </template>
+
+    <template id="pantallaCorrecto">
+        <ons-page id="correcto">
+            <div class="contenedorPadre">
+                <div id="mensaje">
+
+                </div>
+            </div>
+        </ons-page>
+    </template>
+
+    <template id="pantallaIncorrecto">
+        <ons-page id="incorrecto">
+            <div class="contenedorPadre">
+                <div id="mensaje2">
+
+                </div>
+            </div>
+        </ons-page>
+    </template>
+    
+    <template id="pantallaRanking">
+        <ons-page id="ranking">
+                <div id="mensajeRanking">
+                    <img id="btnVolver" src="img/volver.png" alt="volver"/>
+                    <h1>RANKING</h1>
+                    <div id="listaRanking"></div>
+                    
+                </div>
+        </ons-page>
+    </template>
+    
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/onsenui.min.js" type="text/javascript"></script>
+    <script src="js/codigo.js" type="text/javascript"></script>
+</body>
+</html>
